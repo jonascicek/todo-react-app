@@ -14,15 +14,18 @@ const TodoForm = () => {
     };
 
     return (
+        <div className="mt-4 flex justify-between">
         <form onSubmit={handleSubmit}>
             <input
                 type="text"
+                className="mr-3 w-full border p-2"
                 value={text}
                 onChange={(e) => setText(e.target.value)}
                 placeholder="Neues Todo..."
             />
-            <button type="submit">Add</button>
+            <button className="bg-[#0093E9] px-4 py-2 font-semibold text-white rounded hover:shadow-md" >Add</button>
             </form>
+            </div>
     );
 };
 
