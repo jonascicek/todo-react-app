@@ -5,9 +5,10 @@ import TodoItem from "./TodoItem";
 const TodoList = () => {
     const { todos } = useTodoStore();
     return (
-        <ul>
-            {todos.map(todo => <TodoItem key={todo.id} todo={todo} />)}
+        <ul >
+            {todos.map(todo => <TodoItem key={todo.id}  todo={todo} />)}
         </ul>
+    
     );
 };
 

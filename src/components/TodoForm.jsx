@@ -15,7 +15,7 @@ const TodoForm = () => {
 
     return (
         <div className="mt-4 flex justify-between">
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className="flex w-full space-x-4 mb-2">
             <input
                 type="text"
                 className="mr-3 w-full border p-2"
@@ -23,9 +23,9 @@ const TodoForm = () => {
                 onChange={(e) => setText(e.target.value)}
                 placeholder="Neues Todo..."
             />
-            <button className="bg-[#0093E9] px-4 py-2 font-semibold text-white rounded hover:shadow-md" >Add</button>
-            </form>
-            </div>
+            <button className="bg-[#0093E9] px-3 py- font-semibold text-white rounded hover:shadow-md" >Add</button>
+        </form>
+        </div>
     );
 };
 
